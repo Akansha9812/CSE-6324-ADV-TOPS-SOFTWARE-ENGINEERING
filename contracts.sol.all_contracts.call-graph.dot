@@ -1,0 +1,16 @@
+strict digraph {
+subgraph cluster_43_Callee {
+label = "Callee"
+"43_setXandSendEther" [label="setXandSendEther"]
+"43_setX" [label="setX"]
+}subgraph cluster_102_Caller {
+label = "Caller"
+"102_setXFromAddress" [label="setXFromAddress"]
+"102_setXandSendEther" [label="setXandSendEther"]
+"102_setX" [label="setX"]
+}subgraph cluster_solidity {
+label = "[Solidity]"
+}"102_setXFromAddress" -> "43_setX"
+"102_setXandSendEther" -> "43_setXandSendEther"
+"102_setX" -> "43_setX"
+}

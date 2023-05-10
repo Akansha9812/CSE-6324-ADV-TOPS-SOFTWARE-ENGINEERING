@@ -1,0 +1,26 @@
+strict digraph {
+subgraph cluster_34_C {
+label = "C"
+"34_foo" [label="foo"]
+}subgraph cluster_70_E {
+label = "E"
+"70_foo" [label="foo"]
+"70_foo" -> "70_foo"
+}subgraph cluster_10_A {
+label = "A"
+"10_foo" [label="foo"]
+}subgraph cluster_52_D {
+label = "D"
+"52_foo" [label="foo"]
+"52_foo" -> "52_foo"
+}subgraph cluster_22_B {
+label = "B"
+"22_foo" [label="foo"]
+}subgraph cluster_88_F {
+label = "F"
+"88_foo" [label="foo"]
+"88_foo" -> "88_foo"
+}subgraph cluster_solidity {
+label = "[Solidity]"
+}
+}
